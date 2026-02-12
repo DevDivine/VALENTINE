@@ -61,7 +61,10 @@ body::after {
 /* ============================= */
 /* MAIN CONTAINER */
 /* ============================= */
-
+.story-container {
+  position: relative;
+  z-index: 5;
+}
 .story-container {
   width: 100%;
   max-width: 700px;
@@ -80,6 +83,13 @@ body::after {
 /* ============================= */
 /* PAGES */
 /* ============================= */
+.deco {
+  position: fixed;
+  opacity: 0.2;
+  font-size: 42px;
+  pointer-events: none;
+  z-index: 0;   /* LOWER than story container */
+}
 
 .page {
   display: none;
@@ -295,3 +305,4 @@ button {
   }
 
 }
+
